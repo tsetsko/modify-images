@@ -17,7 +17,7 @@ def modify_image(list):
         name = i.split('/')[-1]
         img = cv2.imread(i, 0)
         resized_image = cv2.resize(img, (int(img.shape[1]/2), int(img.shape[0]/2)))
-        cv2.imwrite(('resized' + name), resized_image)
+        cv2.imwrite(('resized_' + name), resized_image)
         print(name)
         print(img.shape)
 
